@@ -7,7 +7,7 @@ public class SceneChanger : MonoBehaviour
 {
     public void ChangeScene()
     {
-        Debug.Log("Switched to End Scene!");// With Debug.Log we can print out values to see if the value is true or false.
+        Debug.Log("Switched to End Scene!");// Debug.Log() is a Console.WriteLine() refrence.
         if (SceneManager.GetActiveScene().buildIndex == 0) // if the build index is 0
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); // Change to second scene

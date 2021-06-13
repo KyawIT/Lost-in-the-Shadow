@@ -18,7 +18,7 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {
         // All that above times movementX so it can move right or left. Example: speed = 100 * movementInputX = -1
-        // 100 * -1 = -100 wihch means its going left
+        // 100 * -1 = -100 wihch means its going left hi 
         Vector3 movement = new Vector3(movementInputX, 0 ,0);
         transform.position += movement * Time.deltaTime * xVelocitySpeed; 
     }

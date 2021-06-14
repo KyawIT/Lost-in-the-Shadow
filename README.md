@@ -12,7 +12,7 @@ Role: Coder, UI Designer, Level Designer
 Name: Noah Grunder
 Role: Coder, Level Designer
 
-Name: Ilijas Brkick
+Name: Ilijas Brkic
 Role: Coder, Level Designer, Texture Designer
 
 Gameplay:

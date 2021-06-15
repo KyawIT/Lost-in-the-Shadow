@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 256402303}
   m_Layer: 0
   m_Name: Tilemap
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -850,7 +850,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 981665512}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalPosition: {x: 0, y: 0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1555712962}
@@ -869,10 +869,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a636607619f0db419661947eebf2d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  jumpScript: {fileID: 981665518}
   rb2D: {fileID: 981665517}
   transform1: {fileID: 981665514}
   xVelocitySpeed: 10
-  jumpForce: 500
 --- !u!61 &981665516
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -932,8 +932,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c4413aecbfa8d045b051f09f1d710fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpSpeed: 2
-  jump: {x: 0, y: 0}
+  jumpForce: 35
+  rb2D: {fileID: 981665517}
 --- !u!1 &1526346693
 GameObject:
   m_ObjectHideFlags: 0

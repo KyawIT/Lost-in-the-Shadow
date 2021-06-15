@@ -8,7 +8,7 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody2D rb2D;
     public Transform transform1;
     public float xVelocitySpeed;
-    float movementInputX, movementInputY;
+    float movementInputX;
 
     /// <summary>
     /// With Update Function the Frames are better optimized for Exampel: Controls.
@@ -20,15 +20,20 @@ public class PlayerMovement : MonoBehaviour
         // Input.GetAxisRaw("Horizontal") = Output is 1 if you press D or right ArrowKey
         // Input.GetAxisRaw("Horizontal") = Output is -1 if you press A or left ArrowKey
         movementInputX = Input.GetAxisRaw("Horizontal");
-        movementInputY = Input.GetAxisRaw("Vertical");
-
-        void OnCollisionEnter2D(Collision2D collision)
+        if (transform1.position.y > 5)
         {
+            jumpScript.enabled = false;
+            Debug.Log("Disabled");
+        }
+    }
 
-            if (collision.collider.tag != "Ground")
-            {
-                jumpScript.enabled = false;
-            }
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+
+        if (collision.collider.tag == "Ground")
+        {
+            jumpScript.enabled = true;
+            Debug.Log("Enabled");
         }
     }
 

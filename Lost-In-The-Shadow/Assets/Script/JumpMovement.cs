@@ -4,23 +4,22 @@ using System.Collections.Generic;
 
 public class JumpMovement : MonoBehaviour
 {
-    public float jumpSpeed = 10f;
-    private Rigidbody2D rigidBody2D;
-    public Vector2 jump; 
+    private float yMov;
+    public float jumpForce;
+    public Rigidbody2D rb2D;
 
-    void Start()
+    // Update is called once per frame
+    void Update()
     {
-        // initzializing 
-        rigidBody2D = GetComponent<Rigidbody2D>();
+        yMov = Input.GetAxisRaw("Vertical");
     }
 
-    void FixedUpdate()
+    private void FixedUpdate()
     {
-        if (Input.GetKey(KeyCode.Space))
+        if (yMov == 1f || Input.GetKey(KeyCode.Space))
         {
-            jump = new Vector2(0f, jumpSpeed);
-            rigidBody2D.velocity += jump;
-        }        
+            rb2D.AddForce(new Vector2(0 , jumpForce)*Time.deltaTime, ForceMode2D.Impulse);
+        }
     }
 }
 

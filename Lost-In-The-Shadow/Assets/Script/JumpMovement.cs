@@ -1,26 +1,31 @@
-using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine;
 
 public class JumpMovement : MonoBehaviour
 {
-    public float jumpSpeed = 10f;
-    private Rigidbody2D rigidBody2D;
-    public Vector2 jump; 
+    public Rigidbody2D rb;
+    public bool isGrounded = true;
+    public float jumpForce;
 
     void Start()
     {
-        // initzializing 
-        rigidBody2D = GetComponent<Rigidbody2D>();
+        rb = GetComponent<Rigidbody2D>();
     }
 
-    void FixedUpdate()
+    private void Update()
     {
-        if (Input.GetKey(KeyCode.Space))
+        bool playerJump = Input.GetButtonDown("Jump");
+        bool isGrounded = IsGrounded();
+
+        if (playerJump && isGrounded)
         {
-            jump = new Vector2(0f, jumpSpeed);
-            rigidBody2D.velocity += jump;
-        }        
+            rb.AddForce(Vector3.up * jumpForce);
+        }
+    }
+    private bool IsGrounded()
+    {
+       Physics2D.
     }
 }
 

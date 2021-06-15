@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public JumpMovement jumpScript;
     public Rigidbody2D rb2D;
     public Transform transform1;
     public float xVelocitySpeed;
@@ -22,14 +21,6 @@ public class PlayerMovement : MonoBehaviour
         movementInputX = Input.GetAxisRaw("Horizontal");
         movementInputY = Input.GetAxisRaw("Vertical");
 
-        void OnCollisionEnter2D(Collision2D collision)
-        {
-
-            if (collision.collider.tag != "Ground")
-            {
-                jumpScript.enabled = false;
-            }
-        }
     }
 
     // With FixedUpdate frames are better caculated and we are messing with Physic

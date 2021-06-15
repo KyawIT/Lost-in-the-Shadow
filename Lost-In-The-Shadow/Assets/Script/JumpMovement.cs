@@ -16,9 +16,11 @@ public class JumpMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (yMov == 1f || Input.GetKey(KeyCode.Space))
+        //If yMov is 1 or the space key is pressed
+        if (yMov == 1f || Input.GetKeyDown(KeyCode.Space))
         {
-            rb2D.AddForce(new Vector2(0 , jumpForce)*Time.deltaTime, ForceMode2D.Impulse);
+            // the velocity that effected the rigibody is equal to the 
+            rb2D.velocity = Vector2.up * jumpForce;
         }
     }
 }

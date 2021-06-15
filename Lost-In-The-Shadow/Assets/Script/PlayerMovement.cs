@@ -28,6 +28,7 @@ public class PlayerMovement : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
+        // IF the collision tag is being detected as "Ground" the jumpin script is enabled
         if (collision.collider.tag == "Ground")
         {
             jumpScript.enabled = true;

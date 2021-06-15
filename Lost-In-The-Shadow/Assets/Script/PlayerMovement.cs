@@ -23,17 +23,14 @@ public class PlayerMovement : MonoBehaviour
         if (transform1.position.y > 5)
         {
             jumpScript.enabled = false;
-            Debug.Log("Disabled");
         }
     }
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-
         if (collision.collider.tag == "Ground")
         {
             jumpScript.enabled = true;
-            Debug.Log("Enabled");
         }
     }
 

@@ -1,18 +1,26 @@
+using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 
 public class JumpMovement : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public float jumpSpeed = 10f;
+    private Rigidbody2D rigidBody2D;
+    public Vector2 jump; 
+
     void Start()
     {
-        
+        // initzializing 
+        rigidBody2D = GetComponent<Rigidbody2D>();
     }
 
-    // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        
+        if (Input.GetKey(KeyCode.Space))
+        {
+            jump = new Vector2(0f, jumpSpeed);
+            rigidBody2D.velocity += jump;
+        }        
     }
 }
+

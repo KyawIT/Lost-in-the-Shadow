@@ -7,7 +7,7 @@ public class PlayerMovement : MonoBehaviour
     public JumpMovement jumpScript;
     public Rigidbody2D rb2D;
     public Transform transform1;
-    public float xVelocitySpeed;
+    public float xVelocitySpeed, maxJumpHeight=5f;
     float movementInputX;
 
     /// <summary>
@@ -20,7 +20,7 @@ public class PlayerMovement : MonoBehaviour
         // Input.GetAxisRaw("Horizontal") = Output is 1 if you press D or right ArrowKey
         // Input.GetAxisRaw("Horizontal") = Output is -1 if you press A or left ArrowKey
         movementInputX = Input.GetAxisRaw("Horizontal");
-        if (transform1.position.y > 5)
+        if (transform1.position.y > maxJumpHeight)
         {
             jumpScript.enabled = false;
         }

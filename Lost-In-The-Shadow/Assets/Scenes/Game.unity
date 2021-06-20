@@ -956,6 +956,7 @@ MonoBehaviour:
   rb2D: {fileID: 981665517}
   transform1: {fileID: 981665514}
   xVelocitySpeed: 10
+  maxJumpHeight: 5
 --- !u!61 &981665516
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1015,7 +1016,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c4413aecbfa8d045b051f09f1d710fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpForce: 35
+  jumpForce: 15
   rb2D: {fileID: 981665517}
 --- !u!1 &1555712961
 GameObject:

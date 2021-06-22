@@ -10,7 +10,7 @@ public class UI : MonoBehaviour
 
 	void Start()
 	{
-		gameObject.GetComponent<Button>().;
+		//gameObject.GetComponent<Button>().;
 		//btn.onClick.AddListener(TaskOnClick);
 	}
 

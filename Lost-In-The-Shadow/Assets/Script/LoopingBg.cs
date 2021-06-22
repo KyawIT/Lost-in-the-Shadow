@@ -4,13 +4,20 @@ using UnityEngine;
 
 public class LoopingBg : MonoBehaviour
 {
-    [Range(-1f, 1f)]
-    public float loopingSpeed = 0;
-    float offset;
-    public Material mat;
+    private Transform cameraTransform;
+    private Vector3 lastCameraPosi;
 
-    // Update is called once per frame
-    void Update()
+    private void Start()
     {
+        cameraTransform = Camera.main.transform;
+        lastCameraPosi = cameraTransform.position;
+    }
+
+    private void LateUpdate()
+    {
+        Vector3 deltaMovement = cameraTransform.position - lastCameraPosi;
+        float parallaxEffectMultiplier = 0.5f;
+        transform.position += deltaMovement* parallaxEffectMultiplier;
+        lastCameraPosi = cameraTransform.position;
     }
 }

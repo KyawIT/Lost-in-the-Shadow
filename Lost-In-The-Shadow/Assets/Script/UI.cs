@@ -11,7 +11,7 @@ public class UI : MonoBehaviour
 	void Start()
 	{
 		gameObject.GetComponent<Button>().;
-		btn.onClick.AddListener(TaskOnClick);
+		//btn.onClick.AddListener(TaskOnClick);
 	}
 
 	void TaskOnClick()

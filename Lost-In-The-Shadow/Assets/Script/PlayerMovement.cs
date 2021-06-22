@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    public JumpMovement jumpScript;
     public Rigidbody2D rb2D;
     public Transform transform1;
-    public float xVelocitySpeed, jumpForce;
-    float movementInputX, movementInputY;
+    public float xVelocitySpeed;
+    float movementInputX;
 
     /// <summary>
     /// With Update Function the Frames are better optimized for Exampel: Controls.
@@ -19,7 +20,19 @@ public class PlayerMovement : MonoBehaviour
         // Input.GetAxisRaw("Horizontal") = Output is 1 if you press D or right ArrowKey
         // Input.GetAxisRaw("Horizontal") = Output is -1 if you press A or left ArrowKey
         movementInputX = Input.GetAxisRaw("Horizontal");
-        movementInputY = Input.GetAxisRaw("Vertical");
+        if (transform1.position.y > 5)
+        {
+            jumpScript.enabled = false;
+        }
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        // IF the collision tag is being detected as "Ground" the jumpin script is enabled
+        if (collision.collider.tag == "Ground")
+        {
+            jumpScript.enabled = true;
+        }
     }
 
     // With FixedUpdate frames are better caculated and we are messing with Physic
@@ -29,11 +42,7 @@ public class PlayerMovement : MonoBehaviour
         // 100 * -1 = -100 wihch means its going left
         Vector3 movement = new Vector3(movementInputX, 0, 0);
         transform.position += movement * Time.deltaTime * xVelocitySpeed;
-        // if movementInputY has the value of 1 or Input.GetButtonDown("Jump") == true its go up
-        if (movementInputY == 1 || Input.GetButtonDown("Jump"))
-        {
-            rb2D.AddForce(new Vector2(0, jumpForce) * Time.deltaTime, ForceMode2D.Impulse);
-        }
+      
         // If a Horizontal Key is pressed E.g:A, then rotate the charakter about 180 degree
         if (movementInputX == -1)
         {
@@ -45,4 +54,6 @@ public class PlayerMovement : MonoBehaviour
             transform1.localRotation = Quaternion.Euler(0, 0, 0);
         }
     }
+
+   
 }

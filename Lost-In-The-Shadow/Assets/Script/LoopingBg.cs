@@ -16,7 +16,7 @@ public class LoopingBg : MonoBehaviour
     private void LateUpdate()
     {
         Vector3 deltaMovement = cameraTransform.position - lastCameraPosi;
-        float parallaxEffectMultiplier = 0.5f;
+        float parallaxEffectMultiplier = 0.0f;
         transform.position += deltaMovement* parallaxEffectMultiplier;
         lastCameraPosi = cameraTransform.position;
     }

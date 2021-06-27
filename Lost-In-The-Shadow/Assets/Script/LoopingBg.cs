@@ -4,33 +4,28 @@ using UnityEngine;
 
 public class LoopingBg : MonoBehaviour
 {
-    [SerializeField] private Vector2 parallaxEffectMultiplier;
-
-    private Transform cameraTransform;
-    private Vector3 lastCameraPosition;
-    private float textureUnitSizeX;
-
+    private float len, startPos;
+    public GameObject camera;
+    public float parallaxEffect;
 
     private void Start()
     {
-        cameraTransform = Camera.main.transform;
-        lastCameraPosition = cameraTransform.position;
-        Sprite sprite = GetComponent<SpriteRenderer>().sprite;
-        Texture texture = sprite.texture;
-        textureUnitSizeX = texture.width / sprite.pixelsPerUnit;
+        startPos = transform.position.x; // The start position of our player for us 0 on x.
+        len = GetComponent<SpriteRenderer>().bounds.size.x; // Gives out the sprite length.
     }
 
-    private void LateUpdate()
+    private void FixedUpdate()
     {
-
-        Vector3 deltaMovement = cameraTransform.position - lastCameraPosition;
-        transform.position += new Vector3(deltaMovement.x * parallaxEffectMultiplier.x, deltaMovement.y * parallaxEffectMultiplier.y);
-        lastCameraPosition = cameraTransform.position;
-
-        if(Mathf.Abs(cameraTransform.position.x - transform.position.x) >= textureUnitSizeX)
+        float temp = camera.transform.position.x * (1 - parallaxEffect);
+        float distance = camera.transform.position.x * parallaxEffect; // distance value is set to how far we have moved from start pos.
+        transform.position = new Vector3(startPos+distance, transform.position.y, transform.position.z);
+        if (temp > startPos)
         {
-            float offsetPositionX = (cameraTransform.position.x - transform.position.x) % textureUnitSizeX;
-            transform.position = new Vector3(cameraTransform.position.x + offsetPositionX, transform.position.y);
+            startPos += len;
+        }
+        else if (temp < startPos - len)
+        {
+            startPos -= len;
         }
     }
 }

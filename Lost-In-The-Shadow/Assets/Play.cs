@@ -4,10 +4,17 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 
-public class Start : MonoBehaviour
+public class Play : MonoBehaviour
 {
-    public void PlayGame ()
+    private void Update()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        if (Input.GetKey(KeyCode.Space))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
+        else if (Input.GetKey(KeyCode.Escape))
+        {
+            SceneManager.LoadScene(3);
+        }
     }
 }

@@ -4,9 +4,14 @@ using System.Collections.Generic;
 
 public class JumpMovement : MonoBehaviour
 {
+    public float valueY;
     public float jumpForce;
     public Rigidbody2D rb2D;
 
+    private void Update()
+    {
+        
+    }
     private void FixedUpdate()
     {
         //If yMov is 1 or the space key is pressed

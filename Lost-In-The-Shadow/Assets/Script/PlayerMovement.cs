@@ -8,7 +8,7 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody2D rb2D;
     public Transform transform1;
     public float xVelocitySpeed, maxJumpHeight=5f;
-    float movementInputX;
+    float movementInputX, currentPosi;
 
     /// <summary>
     /// With Update Function the Frames are better optimized for Exampel: Controls.
@@ -20,7 +20,7 @@ public class PlayerMovement : MonoBehaviour
         // Input.GetAxisRaw("Horizontal") = Output is 1 if you press D or right ArrowKey
         // Input.GetAxisRaw("Horizontal") = Output is -1 if you press A or left ArrowKey
         movementInputX = Input.GetAxisRaw("Horizontal");
-        if (transform1.position.y > maxJumpHeight)
+        if (transform1.position.y > currentPosi+maxJumpHeight)
         {
             jumpScript.enabled = false;
         }
@@ -28,6 +28,7 @@ public class PlayerMovement : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
+        currentPosi = transform1.position.y;
         // IF the collision tag is being detected as "Ground" the jumpin script is enabled
         if (collision.collider.tag == "Ground")
         {

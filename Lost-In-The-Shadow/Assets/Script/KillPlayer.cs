@@ -6,24 +6,19 @@ using UnityEngine.SceneManagement;
 
 public class KillPlayer : MonoBehaviour
 {
-    public int Respawn;
-    // Start is called before the first frame update
-    void Start()
+    private int respawn;
+    public GameOverScreen gameOver;
+    private void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        respawn = SceneManager.GetActiveScene().buildIndex;
     }
     void OnTriggerEnter2D(Collider2D other)
     {
+        // If the player collide (btw.: the player has the TAG "player")
         if (other.CompareTag("Player"))
         {
-            SceneManager.LoadScene(Respawn);
-            //Add Player stop
+            gameOver.Setup(CoinCounter.coinAmount);
+            SceneManager.LoadScene(respawn);
         }
     }
 }

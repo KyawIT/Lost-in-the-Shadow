@@ -17,6 +17,7 @@ public class KillPlayer : MonoBehaviour
         // If the player collide (btw.: the player has the TAG "player")
         if (other.CompareTag("Player"))
         {
+            CoinCounter.coinAmount = 0;
             gameOver.Setup(CoinCounter.coinAmount);
             SceneManager.LoadScene(respawn);
         }

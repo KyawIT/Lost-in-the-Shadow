@@ -154,7 +154,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 570919301}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -180.131}
 --- !u!114 &97966097
 MonoBehaviour:
@@ -168,7 +168,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04600e836f60cbf4c91ba777e154acd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Respawn: 1
+  gameOver: {fileID: 0}
 --- !u!60 &97966098
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -271,7 +271,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3014652560429191582, guid: 9e16b49f8b7b7d14ba7073150129a0ef, type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 3014652560429191582, guid: 9e16b49f8b7b7d14ba7073150129a0ef, type: 3}
       propertyPath: m_LocalScale.y
@@ -350,7 +350,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 570919301}
-  m_RootOrder: 16
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -180.131}
 --- !u!114 &105667612
 MonoBehaviour:
@@ -364,7 +364,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04600e836f60cbf4c91ba777e154acd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Respawn: 1
+  gameOver: {fileID: 0}
 --- !u!60 &105667613
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -485,7 +485,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 570919301}
-  m_RootOrder: 32
+  m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180.408}
 --- !u!114 &156110081
 MonoBehaviour:
@@ -499,7 +499,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04600e836f60cbf4c91ba777e154acd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Respawn: 1
+  gameOver: {fileID: 0}
 --- !u!60 &156110082
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -620,7 +620,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 570919301}
-  m_RootOrder: 17
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: -0.601, y: 0.079, z: -180.813}
 --- !u!114 &165718070
 MonoBehaviour:
@@ -634,7 +634,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04600e836f60cbf4c91ba777e154acd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Respawn: 1
+  gameOver: {fileID: 0}
 --- !u!60 &165718071
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -755,7 +755,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 570919301}
-  m_RootOrder: 23
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: -0.601, y: 0.079, z: -180.813}
 --- !u!114 &166743072
 MonoBehaviour:
@@ -769,7 +769,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04600e836f60cbf4c91ba777e154acd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Respawn: 1
+  gameOver: {fileID: 0}
 --- !u!60 &166743073
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -7369,7 +7369,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 570919301}
-  m_RootOrder: 37
+  m_RootOrder: 36
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.153}
 --- !u!114 &281060549
 MonoBehaviour:
@@ -7383,7 +7383,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04600e836f60cbf4c91ba777e154acd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Respawn: 1
+  gameOver: {fileID: 0}
 --- !u!60 &281060550
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -7486,7 +7486,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3014652560429191582, guid: 9e16b49f8b7b7d14ba7073150129a0ef, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 3014652560429191582, guid: 9e16b49f8b7b7d14ba7073150129a0ef, type: 3}
       propertyPath: m_LocalScale.y
@@ -7565,7 +7565,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 570919301}
-  m_RootOrder: 31
+  m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180.408}
 --- !u!114 &378649047
 MonoBehaviour:
@@ -7579,7 +7579,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04600e836f60cbf4c91ba777e154acd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Respawn: 1
+  gameOver: {fileID: 0}
 --- !u!60 &378649048
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -7700,7 +7700,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 570919301}
-  m_RootOrder: 22
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: -0.601, y: 0.079, z: -180.813}
 --- !u!114 &403712960
 MonoBehaviour:
@@ -7714,7 +7714,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04600e836f60cbf4c91ba777e154acd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Respawn: 1
+  gameOver: {fileID: 0}
 --- !u!60 &403712961
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -7845,7 +7845,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04600e836f60cbf4c91ba777e154acd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Respawn: 1
+  gameOver: {fileID: 0}
 --- !u!60 &570919299
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -7946,7 +7946,6 @@ Transform:
   m_LocalPosition: {x: 14.6258, y: 3.2694, z: 0}
   m_LocalScale: {x: 0.6070683, y: 0.6037451, z: 1}
   m_Children:
-  - {fileID: 1897501839}
   - {fileID: 1041178215}
   - {fileID: 1370863019}
   - {fileID: 668617644}
@@ -7988,7 +7987,7 @@ Transform:
   - {fileID: 2041017901}
   - {fileID: 1482937057}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &588890776
 GameObject:
@@ -8021,7 +8020,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 570919301}
-  m_RootOrder: 38
+  m_RootOrder: 37
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.153}
 --- !u!114 &588890778
 MonoBehaviour:
@@ -8035,7 +8034,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04600e836f60cbf4c91ba777e154acd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Respawn: 1
+  gameOver: {fileID: 0}
 --- !u!60 &588890779
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -8161,7 +8160,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 570919301}
-  m_RootOrder: 35
+  m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.153}
 --- !u!114 &630490334
 MonoBehaviour:
@@ -8175,7 +8174,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04600e836f60cbf4c91ba777e154acd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Respawn: 1
+  gameOver: {fileID: 0}
 --- !u!60 &630490335
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -8296,7 +8295,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 570919301}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180.408}
 --- !u!114 &636743292
 MonoBehaviour:
@@ -8310,7 +8309,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04600e836f60cbf4c91ba777e154acd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Respawn: 1
+  gameOver: {fileID: 0}
 --- !u!60 &636743293
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -8431,7 +8430,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 570919301}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180.408}
 --- !u!114 &668617645
 MonoBehaviour:
@@ -8445,7 +8444,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04600e836f60cbf4c91ba777e154acd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Respawn: 1
+  gameOver: {fileID: 0}
 --- !u!60 &668617646
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -8548,7 +8547,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3014652560429191582, guid: 9e16b49f8b7b7d14ba7073150129a0ef, type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 3014652560429191582, guid: 9e16b49f8b7b7d14ba7073150129a0ef, type: 3}
       propertyPath: m_LocalScale.y
@@ -8609,7 +8608,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3014652560429191582, guid: 9e16b49f8b7b7d14ba7073150129a0ef, type: 3}
       propertyPath: m_RootOrder
-      value: 20
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 3014652560429191582, guid: 9e16b49f8b7b7d14ba7073150129a0ef, type: 3}
       propertyPath: m_LocalScale.y
@@ -8670,7 +8669,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3014652560429191582, guid: 9e16b49f8b7b7d14ba7073150129a0ef, type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 3014652560429191582, guid: 9e16b49f8b7b7d14ba7073150129a0ef, type: 3}
       propertyPath: m_LocalScale.y
@@ -8749,7 +8748,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 570919301}
-  m_RootOrder: 20
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: -0.601, y: 0.079, z: -180.813}
 --- !u!114 &793607705
 MonoBehaviour:
@@ -8763,7 +8762,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04600e836f60cbf4c91ba777e154acd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Respawn: 1
+  gameOver: {fileID: 0}
 --- !u!60 &793607706
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -9145,7 +9144,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3014652560429191582, guid: 9e16b49f8b7b7d14ba7073150129a0ef, type: 3}
       propertyPath: m_RootOrder
-      value: 22
+      value: 23
       objectReference: {fileID: 0}
     - target: {fileID: 3014652560429191582, guid: 9e16b49f8b7b7d14ba7073150129a0ef, type: 3}
       propertyPath: m_LocalScale.y
@@ -9257,7 +9256,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 570919301}
-  m_RootOrder: 28
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180.408}
 --- !u!114 &933570309
 MonoBehaviour:
@@ -9271,7 +9270,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04600e836f60cbf4c91ba777e154acd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Respawn: 1
+  gameOver: {fileID: 0}
 --- !u!60 &933570310
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -9374,7 +9373,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3014652560429191582, guid: 9e16b49f8b7b7d14ba7073150129a0ef, type: 3}
       propertyPath: m_RootOrder
-      value: 32
+      value: 33
       objectReference: {fileID: 0}
     - target: {fileID: 3014652560429191582, guid: 9e16b49f8b7b7d14ba7073150129a0ef, type: 3}
       propertyPath: m_LocalScale.y
@@ -9472,7 +9471,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3014652560429191582, guid: 9e16b49f8b7b7d14ba7073150129a0ef, type: 3}
       propertyPath: m_RootOrder
-      value: 29
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 3014652560429191582, guid: 9e16b49f8b7b7d14ba7073150129a0ef, type: 3}
       propertyPath: m_LocalScale.y
@@ -9551,7 +9550,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 570919301}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.153}
 --- !u!114 &963928138
 MonoBehaviour:
@@ -9565,7 +9564,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04600e836f60cbf4c91ba777e154acd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Respawn: 1
+  gameOver: {fileID: 0}
 --- !u!60 &963928139
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -9686,7 +9685,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 570919301}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180.408}
 --- !u!114 &985525098
 MonoBehaviour:
@@ -9700,7 +9699,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04600e836f60cbf4c91ba777e154acd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Respawn: 1
+  gameOver: {fileID: 0}
 --- !u!60 &985525099
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -9821,7 +9820,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 570919301}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.153}
 --- !u!114 &1006051537
 MonoBehaviour:
@@ -9835,7 +9834,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04600e836f60cbf4c91ba777e154acd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Respawn: 1
+  gameOver: {fileID: 0}
 --- !u!60 &1006051538
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -9956,7 +9955,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 570919301}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.153}
 --- !u!114 &1021052684
 MonoBehaviour:
@@ -9970,7 +9969,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04600e836f60cbf4c91ba777e154acd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Respawn: 1
+  gameOver: {fileID: 0}
 --- !u!60 &1021052685
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -10091,7 +10090,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 570919301}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1041178216
 MonoBehaviour:
@@ -10105,7 +10104,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04600e836f60cbf4c91ba777e154acd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Respawn: 1
+  gameOver: {fileID: 0}
 --- !u!60 &1041178217
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -10226,7 +10225,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 570919301}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.153}
 --- !u!114 &1075900988
 MonoBehaviour:
@@ -10240,7 +10239,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04600e836f60cbf4c91ba777e154acd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Respawn: 1
+  gameOver: {fileID: 0}
 --- !u!60 &1075900989
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -10361,7 +10360,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 570919301}
-  m_RootOrder: 18
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: -0.601, y: 0.079, z: -180.813}
 --- !u!114 &1087230791
 MonoBehaviour:
@@ -10375,7 +10374,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04600e836f60cbf4c91ba777e154acd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Respawn: 1
+  gameOver: {fileID: 0}
 --- !u!60 &1087230792
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -10496,7 +10495,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 570919301}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.153}
 --- !u!114 &1132608308
 MonoBehaviour:
@@ -10510,7 +10509,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04600e836f60cbf4c91ba777e154acd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Respawn: 1
+  gameOver: {fileID: 0}
 --- !u!60 &1132608309
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -10613,7 +10612,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3014652560429191582, guid: 9e16b49f8b7b7d14ba7073150129a0ef, type: 3}
       propertyPath: m_RootOrder
-      value: 24
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 3014652560429191582, guid: 9e16b49f8b7b7d14ba7073150129a0ef, type: 3}
       propertyPath: m_LocalScale.y
@@ -10674,7 +10673,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3014652560429191582, guid: 9e16b49f8b7b7d14ba7073150129a0ef, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 3014652560429191582, guid: 9e16b49f8b7b7d14ba7073150129a0ef, type: 3}
       propertyPath: m_LocalScale.y
@@ -10753,7 +10752,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 570919301}
-  m_RootOrder: 33
+  m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.153}
 --- !u!114 &1196439849
 MonoBehaviour:
@@ -10767,7 +10766,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04600e836f60cbf4c91ba777e154acd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Respawn: 1
+  gameOver: {fileID: 0}
 --- !u!60 &1196439850
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -10888,7 +10887,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 570919301}
-  m_RootOrder: 36
+  m_RootOrder: 35
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.153}
 --- !u!114 &1206998926
 MonoBehaviour:
@@ -10902,7 +10901,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04600e836f60cbf4c91ba777e154acd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Respawn: 1
+  gameOver: {fileID: 0}
 --- !u!60 &1206998927
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -11023,7 +11022,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 570919301}
-  m_RootOrder: 29
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180.408}
 --- !u!114 &1214862450
 MonoBehaviour:
@@ -11037,7 +11036,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04600e836f60cbf4c91ba777e154acd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Respawn: 1
+  gameOver: {fileID: 0}
 --- !u!60 &1214862451
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -11158,7 +11157,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 570919301}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.153}
 --- !u!114 &1216106312
 MonoBehaviour:
@@ -11172,7 +11171,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04600e836f60cbf4c91ba777e154acd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Respawn: 1
+  gameOver: {fileID: 0}
 --- !u!60 &1216106313
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -11293,7 +11292,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 570919301}
-  m_RootOrder: 34
+  m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.153}
 --- !u!114 &1221585991
 MonoBehaviour:
@@ -11307,7 +11306,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04600e836f60cbf4c91ba777e154acd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Respawn: 1
+  gameOver: {fileID: 0}
 --- !u!60 &1221585992
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -11428,7 +11427,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 570919301}
-  m_RootOrder: 27
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: -0.601, y: 0.079, z: -180.813}
 --- !u!114 &1224564989
 MonoBehaviour:
@@ -11442,7 +11441,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04600e836f60cbf4c91ba777e154acd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Respawn: 1
+  gameOver: {fileID: 0}
 --- !u!60 &1224564990
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -11563,7 +11562,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 570919301}
-  m_RootOrder: 21
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: -0.601, y: 0.079, z: -180.813}
 --- !u!114 &1263668592
 MonoBehaviour:
@@ -11577,7 +11576,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04600e836f60cbf4c91ba777e154acd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Respawn: 1
+  gameOver: {fileID: 0}
 --- !u!60 &1263668593
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -11680,7 +11679,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3014652560429191582, guid: 9e16b49f8b7b7d14ba7073150129a0ef, type: 3}
       propertyPath: m_RootOrder
-      value: 18
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 3014652560429191582, guid: 9e16b49f8b7b7d14ba7073150129a0ef, type: 3}
       propertyPath: m_LocalScale.y
@@ -11741,7 +11740,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3014652560429191582, guid: 9e16b49f8b7b7d14ba7073150129a0ef, type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 3014652560429191582, guid: 9e16b49f8b7b7d14ba7073150129a0ef, type: 3}
       propertyPath: m_LocalScale.y
@@ -11820,7 +11819,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 570919301}
-  m_RootOrder: 25
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: -0.601, y: 0.079, z: -180.813}
 --- !u!114 &1347870953
 MonoBehaviour:
@@ -11834,7 +11833,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04600e836f60cbf4c91ba777e154acd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Respawn: 1
+  gameOver: {fileID: 0}
 --- !u!60 &1347870954
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -11955,7 +11954,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 570919301}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.153}
 --- !u!114 &1369610077
 MonoBehaviour:
@@ -11969,7 +11968,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04600e836f60cbf4c91ba777e154acd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Respawn: 1
+  gameOver: {fileID: 0}
 --- !u!60 &1369610078
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -12090,7 +12089,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 570919301}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180.408}
 --- !u!114 &1370863020
 MonoBehaviour:
@@ -12104,7 +12103,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04600e836f60cbf4c91ba777e154acd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Respawn: 1
+  gameOver: {fileID: 0}
 --- !u!60 &1370863021
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -12207,7 +12206,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3014652560429191582, guid: 9e16b49f8b7b7d14ba7073150129a0ef, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3014652560429191582, guid: 9e16b49f8b7b7d14ba7073150129a0ef, type: 3}
       propertyPath: m_LocalScale.x
@@ -12290,7 +12289,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 570919301}
-  m_RootOrder: 40
+  m_RootOrder: 39
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.153}
 --- !u!114 &1482937058
 MonoBehaviour:
@@ -12304,7 +12303,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04600e836f60cbf4c91ba777e154acd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Respawn: 1
+  gameOver: {fileID: 0}
 --- !u!60 &1482937059
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -12407,7 +12406,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3014652560429191582, guid: 9e16b49f8b7b7d14ba7073150129a0ef, type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 3014652560429191582, guid: 9e16b49f8b7b7d14ba7073150129a0ef, type: 3}
       propertyPath: m_LocalScale.y
@@ -12468,7 +12467,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3014652560429191582, guid: 9e16b49f8b7b7d14ba7073150129a0ef, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 3014652560429191582, guid: 9e16b49f8b7b7d14ba7073150129a0ef, type: 3}
       propertyPath: m_LocalScale.y
@@ -12547,7 +12546,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 570919301}
-  m_RootOrder: 26
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: -0.601, y: 0.079, z: -180.813}
 --- !u!114 &1544652595
 MonoBehaviour:
@@ -12561,7 +12560,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04600e836f60cbf4c91ba777e154acd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Respawn: 1
+  gameOver: {fileID: 0}
 --- !u!60 &1544652596
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -12664,7 +12663,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3014652560429191582, guid: 9e16b49f8b7b7d14ba7073150129a0ef, type: 3}
       propertyPath: m_RootOrder
-      value: 23
+      value: 24
       objectReference: {fileID: 0}
     - target: {fileID: 3014652560429191582, guid: 9e16b49f8b7b7d14ba7073150129a0ef, type: 3}
       propertyPath: m_LocalScale.y
@@ -12725,7 +12724,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3014652560429191582, guid: 9e16b49f8b7b7d14ba7073150129a0ef, type: 3}
       propertyPath: m_RootOrder
-      value: 17
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 3014652560429191582, guid: 9e16b49f8b7b7d14ba7073150129a0ef, type: 3}
       propertyPath: m_LocalScale.y
@@ -12786,7 +12785,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3014652560429191582, guid: 9e16b49f8b7b7d14ba7073150129a0ef, type: 3}
       propertyPath: m_RootOrder
-      value: 21
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 3014652560429191582, guid: 9e16b49f8b7b7d14ba7073150129a0ef, type: 3}
       propertyPath: m_LocalScale.y
@@ -12865,7 +12864,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 570919301}
-  m_RootOrder: 24
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: -0.601, y: 0.079, z: -180.813}
 --- !u!114 &1621174574
 MonoBehaviour:
@@ -12879,7 +12878,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04600e836f60cbf4c91ba777e154acd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Respawn: 1
+  gameOver: {fileID: 0}
 --- !u!60 &1621174575
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -12982,7 +12981,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3014652560429191582, guid: 9e16b49f8b7b7d14ba7073150129a0ef, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3014652560429191582, guid: 9e16b49f8b7b7d14ba7073150129a0ef, type: 3}
       propertyPath: m_LocalScale.y
@@ -13065,7 +13064,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 570919301}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -180.131}
 --- !u!114 &1719735727
 MonoBehaviour:
@@ -13079,7 +13078,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04600e836f60cbf4c91ba777e154acd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Respawn: 1
+  gameOver: {fileID: 0}
 --- !u!60 &1719735728
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -13182,7 +13181,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3014652560429191582, guid: 9e16b49f8b7b7d14ba7073150129a0ef, type: 3}
       propertyPath: m_RootOrder
-      value: 30
+      value: 31
       objectReference: {fileID: 0}
     - target: {fileID: 3014652560429191582, guid: 9e16b49f8b7b7d14ba7073150129a0ef, type: 3}
       propertyPath: m_LocalScale.y
@@ -13380,7 +13379,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3014652560429191582, guid: 9e16b49f8b7b7d14ba7073150129a0ef, type: 3}
       propertyPath: m_RootOrder
-      value: 33
+      value: 34
       objectReference: {fileID: 0}
     - target: {fileID: 3014652560429191582, guid: 9e16b49f8b7b7d14ba7073150129a0ef, type: 3}
       propertyPath: m_LocalScale.y
@@ -13496,7 +13495,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 570919301}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180.408}
 --- !u!114 &1815508381
 MonoBehaviour:
@@ -13510,7 +13509,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04600e836f60cbf4c91ba777e154acd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Respawn: 1
+  gameOver: {fileID: 0}
 --- !u!60 &1815508382
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -13613,7 +13612,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3014652560429191582, guid: 9e16b49f8b7b7d14ba7073150129a0ef, type: 3}
       propertyPath: m_RootOrder
-      value: 31
+      value: 32
       objectReference: {fileID: 0}
     - target: {fileID: 3014652560429191582, guid: 9e16b49f8b7b7d14ba7073150129a0ef, type: 3}
       propertyPath: m_LocalScale.y
@@ -13770,11 +13769,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1897501838}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.19, y: -1.69, z: 0}
-  m_LocalScale: {x: 1.0549233, y: 1.0673801, z: 1}
+  m_LocalPosition: {x: 9.653912, y: 2.2490706, z: 0}
+  m_LocalScale: {x: 0.6404105, y: 0.6444255, z: 1}
   m_Children: []
-  m_Father: {fileID: 570919301}
-  m_RootOrder: 0
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1897501840
 MonoBehaviour:
@@ -13788,7 +13787,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04600e836f60cbf4c91ba777e154acd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Respawn: 1
+  gameOver: {fileID: 0}
 --- !u!60 &1897501841
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -13891,7 +13890,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3014652560429191582, guid: 9e16b49f8b7b7d14ba7073150129a0ef, type: 3}
       propertyPath: m_RootOrder
-      value: 19
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 3014652560429191582, guid: 9e16b49f8b7b7d14ba7073150129a0ef, type: 3}
       propertyPath: m_LocalScale.y
@@ -13952,7 +13951,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3014652560429191582, guid: 9e16b49f8b7b7d14ba7073150129a0ef, type: 3}
       propertyPath: m_RootOrder
-      value: 28
+      value: 29
       objectReference: {fileID: 0}
     - target: {fileID: 3014652560429191582, guid: 9e16b49f8b7b7d14ba7073150129a0ef, type: 3}
       propertyPath: m_LocalScale.y
@@ -14031,7 +14030,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 570919301}
-  m_RootOrder: 30
+  m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180.408}
 --- !u!114 &1922954389
 MonoBehaviour:
@@ -14045,7 +14044,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04600e836f60cbf4c91ba777e154acd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Respawn: 1
+  gameOver: {fileID: 0}
 --- !u!60 &1922954390
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -14148,7 +14147,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3014652560429191582, guid: 9e16b49f8b7b7d14ba7073150129a0ef, type: 3}
       propertyPath: m_RootOrder
-      value: 27
+      value: 28
       objectReference: {fileID: 0}
     - target: {fileID: 3014652560429191582, guid: 9e16b49f8b7b7d14ba7073150129a0ef, type: 3}
       propertyPath: m_LocalScale.y
@@ -14209,7 +14208,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3014652560429191582, guid: 9e16b49f8b7b7d14ba7073150129a0ef, type: 3}
       propertyPath: m_RootOrder
-      value: 26
+      value: 27
       objectReference: {fileID: 0}
     - target: {fileID: 3014652560429191582, guid: 9e16b49f8b7b7d14ba7073150129a0ef, type: 3}
       propertyPath: m_LocalScale.y
@@ -14270,7 +14269,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3014652560429191582, guid: 9e16b49f8b7b7d14ba7073150129a0ef, type: 3}
       propertyPath: m_RootOrder
-      value: 25
+      value: 26
       objectReference: {fileID: 0}
     - target: {fileID: 3014652560429191582, guid: 9e16b49f8b7b7d14ba7073150129a0ef, type: 3}
       propertyPath: m_LocalScale.y
@@ -14441,7 +14440,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 570919301}
-  m_RootOrder: 39
+  m_RootOrder: 38
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.153}
 --- !u!114 &2041017902
 MonoBehaviour:
@@ -14455,7 +14454,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04600e836f60cbf4c91ba777e154acd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Respawn: 1
+  gameOver: {fileID: 0}
 --- !u!60 &2041017903
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -14576,7 +14575,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 570919301}
-  m_RootOrder: 19
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: -0.601, y: 0.079, z: -180.813}
 --- !u!114 &2107751923
 MonoBehaviour:
@@ -14590,7 +14589,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04600e836f60cbf4c91ba777e154acd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Respawn: 1
+  gameOver: {fileID: 0}
 --- !u!60 &2107751924
 PolygonCollider2D:
   m_ObjectHideFlags: 0

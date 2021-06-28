@@ -7,6 +7,6 @@ public class Quit : MonoBehaviour
 {
     public void QuitGame ()
     {
-        SceneManager.LoadScene(3);
+        Application.Quit();
     }
 }

@@ -377,13 +377,14 @@ GameObject:
   - component: {fileID: 113441980}
   - component: {fileID: 113441982}
   - component: {fileID: 113441981}
+  - component: {fileID: 113441983}
   m_Layer: 5
-  m_Name: Image
+  m_Name: BG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &113441980
 RectTransform:
   m_ObjectHideFlags: 0
@@ -394,7 +395,10 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 312090832}
+  - {fileID: 1845284210}
+  - {fileID: 1013710546}
   m_Father: {fileID: 1142802912}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -443,6 +447,21 @@ CanvasRenderer:
   m_CullTransparentMesh: 1
 --- !u!1001 &115825175
 PrefabInstance:
+--- !u!114 &113441983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 113441979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9edfdf2efbab834389242ba63cf8ed8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  goldAmount: {fileID: 1845284211}
+--- !u!1 &191027719
+GameObject:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
@@ -747,7 +766,7 @@ PrefabInstance:
     - target: {fileID: 1565865752235762901, guid: a19ea5d6ddbc74545814dfca18f291d7, type: 3}
       propertyPath: gameOver
       value: 
-      objectReference: {fileID: 1142802913}
+      objectReference: {fileID: 0}
     - target: {fileID: 1565865752235762904, guid: a19ea5d6ddbc74545814dfca18f291d7, type: 3}
       propertyPath: m_Name
       value: Spike_Triple_512x128_Pixel (1)
@@ -6763,6 +6782,20 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 3dd35e7f2ffdfe446b4dd0cfa94fa446, type: 2}
   - m_RefCount: 84
     m_Data: {fileID: 11400000, guid: 093638f2828174d40a7a1d86075916b8, type: 2}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   m_TileSpriteArray:
   - m_RefCount: 0
     m_Data: {fileID: 0}
@@ -6800,6 +6833,22 @@ Tilemap:
     m_Data: {fileID: -440545671387595003, guid: 3cf31c14e0e77a2468bdb1c4e1087022, type: 3}
   m_TileMatrixArray:
   - m_RefCount: 570
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  m_TileMatrixArray:
+  - m_RefCount: 396
     m_Data:
       e00: 1
       e01: 0
@@ -6819,12 +6868,15 @@ Tilemap:
       e33: 1
   m_TileColorArray:
   - m_RefCount: 570
+  - m_RefCount: 396
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Origin: {x: -25, y: -16, z: 0}
   m_Size: {x: 106, y: 32, z: 1}
+  m_Origin: {x: -24, y: -16, z: 0}
+  m_Size: {x: 105, y: 24, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
   m_TileOrientation: 0
   m_TileOrientationMatrix:
@@ -6862,6 +6914,7 @@ GameObject:
   - component: {fileID: 312090833}
   m_Layer: 5
   m_Name: GameOver
+  m_Name: GameOver TXT
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6884,6 +6937,16 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 113441980}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: -80}
   m_SizeDelta: {x: 200, y: 63.7632}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &312090833
@@ -8915,17 +8978,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1013710545}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 851722411}
-  m_Father: {fileID: 1142802912}
+  m_Father: {fileID: 113441980}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -121.9}
+  m_AnchoredPosition: {x: 0, y: -100}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1013710547
@@ -9089,14 +9152,13 @@ GameObject:
   - component: {fileID: 1142802911}
   - component: {fileID: 1142802910}
   - component: {fileID: 1142802909}
-  - component: {fileID: 1142802913}
   m_Layer: 5
   m_Name: GameOver
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1142802909
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9500,6 +9562,23 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 883900608772749642, guid: fd972c40eef473845a3d537b0a10dced, type: 3}
   m_PrefabInstance: {fileID: 1240095617}
   m_PrefabAsset: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1142802908}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_Children:
+  - {fileID: 113441980}
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
 --- !u!1 &1251195136
 GameObject:
   m_ObjectHideFlags: 0
@@ -10637,7 +10716,7 @@ GameObject:
   - component: {fileID: 1845284212}
   - component: {fileID: 1845284211}
   m_Layer: 5
-  m_Name: GOLD
+  m_Name: GOLD TXT
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10654,12 +10733,12 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1142802912}
-  m_RootOrder: 3
+  m_Father: {fileID: 113441980}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0000038146973, y: -65}
+  m_AnchoredPosition: {x: 0, y: -30}
   m_SizeDelta: {x: 219.575, y: 63.763}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1845284211
@@ -11306,7 +11385,7 @@ PrefabInstance:
     - target: {fileID: 1565865752235762901, guid: a19ea5d6ddbc74545814dfca18f291d7, type: 3}
       propertyPath: gameOver
       value: 
-      objectReference: {fileID: 1142802913}
+      objectReference: {fileID: 0}
     - target: {fileID: 1565865752235762904, guid: a19ea5d6ddbc74545814dfca18f291d7, type: 3}
       propertyPath: m_Name
       value: Spike

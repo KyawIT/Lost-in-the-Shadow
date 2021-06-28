@@ -18,7 +18,6 @@ public class KillPlayer : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             CoinCounter.coinAmount = 0;
-            gameOver.Setup(CoinCounter.coinAmount);
             SceneManager.LoadScene(respawn);
         }
     }

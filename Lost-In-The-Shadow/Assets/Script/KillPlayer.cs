@@ -6,19 +6,14 @@ using UnityEngine.SceneManagement;
 
 public class KillPlayer : MonoBehaviour
 {
-    private int respawn;
-    public GameOverScreen gameOver;
-    private void Start()
-    {
-        respawn = SceneManager.GetActiveScene().buildIndex;
-    }
     void OnTriggerEnter2D(Collider2D other)
     {
         // If the player collide (btw.: the player has the TAG "player")
         if (other.CompareTag("Player"))
         {
             CoinCounter.coinAmount = 0;
-            SceneManager.LoadScene(respawn);
+            FindObjectOfType<GameManager>().EndGame();
+            SceneManager.LoadScene(3);
         }
     }
 }

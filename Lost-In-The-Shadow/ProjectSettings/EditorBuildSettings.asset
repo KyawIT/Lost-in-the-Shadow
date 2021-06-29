@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Game_LVL2.unity
     guid: f49f07545075ca7409e3b287a3c9eaac
   - enabled: 1
+    path: Assets/Scenes/GameOverScene.unity
+    guid: eec18a23b0784cb419a090e29c848d80
+  - enabled: 1
     path: Assets/Scenes/Hub.unity
     guid: 38cfea9bd457cc94596ae9a7e92db841
   - enabled: 1

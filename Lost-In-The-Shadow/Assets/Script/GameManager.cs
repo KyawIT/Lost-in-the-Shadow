@@ -11,6 +11,6 @@ public class GameManager : MonoBehaviour
 
     public void RestartButton()
     {
-        SceneManager.LoadScene(4);
+        SceneManager.LoadScene("Hub");
     }
 }

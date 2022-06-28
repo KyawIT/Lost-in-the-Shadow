@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Coin : MonoBehaviour
 {
@@ -10,6 +11,10 @@ public class Coin : MonoBehaviour
         {
             CoinCounter.coinAmount += 1;
             Destroy(gameObject);
+            if (CoinCounter.coinAmount == 10)
+            {
+                SceneManager.LoadScene("End_Scene");
+            }
         }
     }
 }

@@ -10,11 +10,11 @@ public class Play : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Space))
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            SceneManager.LoadScene("Hub");
         }
         else if (Input.GetKey(KeyCode.Escape))
         {
-            SceneManager.LoadScene(3);
+            Application.Quit();
         }
     }
 }

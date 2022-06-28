@@ -7,7 +7,7 @@ public class Main : MonoBehaviour
 {
     public void ButtonToMain()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene("Entrance_UI");
     }
 
 }
